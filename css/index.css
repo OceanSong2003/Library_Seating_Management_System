@@ -1,0 +1,98 @@
+/* 通用样式重置，简化默认差异 */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+body {
+  font-family: "Microsoft YaHei", sans-serif; 
+  color: #333;
+}
+a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+/* 头部导航 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.logo {
+  font-size: 20px; 
+  font-weight: bold;
+}
+.nav a {
+  margin-left: 20px; 
+  font-size: 14px;
+}
+
+/* Banner 区域 */
+.banner {
+  position: relative;
+  height: 400px;
+  background: url('../images/1.png') center/cover no-repeat; /* 替换成实际背景图地址 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.banner .mask {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3); /* 遮罩层，让文案更清晰 */
+}
+.banner .content {
+  position: relative; 
+  z-index: 1; /* 让文案在遮罩上层 */
+  max-width: 600px;
+}
+.banner .content h2 {
+  font-size: 32px; 
+  margin-bottom: 20px;
+}
+.banner .content p {
+  font-size: 18px; 
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* 按钮样式 */
+.btn-group .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 4px;
+  background-color: #007bff; 
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+.btn-group .btn:hover {
+  background-color: #0056b3;
+}
+.btn-group .btn-green {
+  background-color: #28a745;
+}
+.btn-group .btn-green:hover {
+  background-color: #218838;
+}
+
+/* 内容介绍区 */
+.intro {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.intro h3 {
+  font-size: 24px; 
+  margin-bottom: 20px;
+}
+.intro p {
+  line-height: 1.8;
+}
