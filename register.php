@@ -49,26 +49,7 @@
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen font-sans">
     <!-- 导航栏 -->
-    <header class="bg-white/80 backdrop-blur-sm shadow-sm fixed w-full top-0 z-50 transition-all duration-300">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-2">
-                <i class="fa fa-book text-primary text-2xl"></i>
-                <span class="font-bold text-xl text-dark">图书馆预约系统</span>
-            </a>
-            <nav class="hidden md:flex items-center space-x-6">
-                <a href="./index.html" class="text-gray-600 hover:text-primary transition-colors">首页</a>
-                <a href="#" class="text-gray-600 hover:text-primary transition-colors">位置预约</a>
-                <a href="#" class="text-gray-600 hover:text-primary transition-colors">座位管理</a>
-                <a href="#" class="text-gray-600 hover:text-primary transition-colors">图书公告</a>
-                <a href="#" class="text-gray-600 hover:text-primary transition-colors">在线留言</a>
-                <a href="login.html" class="px-4 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors">登录</a>
-            </nav>
-            <button class="md:hidden text-gray-600 focus:outline-none" id="mobile-menu-button">
-                <i class="fa fa-bars text-xl"></i>
-            </button>
-        </div>
-        
-    </header>
+    <?php include('./header.html'); ?>
 
     <!-- 主内容区 -->
     <main class="container mx-auto px-4 pt-24 pb-16">
@@ -81,7 +62,7 @@
                     <div class="absolute -bottom-10 -right-10 w-60 h-60 bg-secondary/10 rounded-full blur-3xl"></div>
                     
                     <!-- 主图 -->
-                    <img src="https://picsum.photos/id/28/800/600" alt="图书馆学习环境" class="rounded-xl shadow-xl relative z-10 card-hover">
+                    <img src="./images/3.jpg" alt="图书馆学习环境" class="rounded-xl shadow-xl relative z-10 card-hover">
                     
                     <!-- 信息卡片 -->
                     <div class="absolute -bottom-8 -left-8 bg-white rounded-lg shadow-lg p-5 max-w-xs z-20 card-hover">
@@ -103,7 +84,7 @@
                 <div class="bg-white rounded-xl shadow-xl p-8 card-hover">
                     <div class="text-center mb-8">
                         <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-dark">创建账户</h2>
-                        <p class="text-gray-600 mt-2">加入我们的图书馆预约系统，开始享受便捷的座位预约服务</p>
+                        <p class="text-gray-600 mt-2">加入图书馆预约系统，开始享受便捷的座位预约服务</p>
                     </div>
                     
                     <form id="registration-form" class="space-y-5">
@@ -172,7 +153,7 @@
                     <!-- 登录链接 -->
                     <div class="mt-6 text-center">
                         <p class="text-gray-600">
-                            已有账号? <a href="login.html" class="font-medium text-primary hover:text-primary/80 transition-colors">立即登录</a>
+                            已有账号? <a href="login.php" class="font-medium text-primary hover:text-primary/80 transition-colors">立即登录</a>
                         </p>
                     </div>
                     

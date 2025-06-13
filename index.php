@@ -18,8 +18,8 @@
       <h2>图书馆预约选座系统</h2>
       <p>图书馆预约系统是为了缓解高校图书馆座位紧缺，为大学生提供及时的座位供其使用。</p>
       <div class="btn-group">
-        <a href="#" class="btn">登录</a>
-        <a href="./register.html" class="btn btn-green">注册</a>
+        <a href="./login.php" class="btn">登录</a>
+        <a href="register.php" class="btn btn-green">注册</a>
       </div>
     </div>
   </section>
